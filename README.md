@@ -11,3 +11,6 @@ A simple Java project used to practice Git and GitHub workflows.
 - Java
 - Git
 - GitHub
+## Status
+
+Project is under development.
