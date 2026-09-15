@@ -9,7 +9,7 @@ public class RideBooking {
 
     public static void main(String[] args) {
 
-        double distance = 10;
+        double distance = 15;
 
         double fare = calculateFare(distance);
 
