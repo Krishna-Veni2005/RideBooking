@@ -1,4 +1,6 @@
 *.class
+out/
+target/
 .idea/
 .vscode/
-target/
+.env
