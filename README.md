@@ -14,3 +14,7 @@ A simple Java project used to practice Git and GitHub workflows.
 ## Status
 
 Project is under development.
+
+## Team Workflow
+
+Features are developed using branches and Pull Requests.
