@@ -20,4 +20,3 @@ Project is under development.
 Features are developed using branches and Pull Requests.
 
 Main branch update for rebase practice.
-Rebase practice completed.
