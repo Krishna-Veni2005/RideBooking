@@ -22,3 +22,5 @@ jobs:
 
       - name: Compile Java code
         run: javac src/RideBooking.java
+      - name: Run RideBooking program
+        run: java -cp src RideBooking
