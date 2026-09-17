@@ -24,3 +24,7 @@ jobs:
         run: javac src/RideBooking.java
       - name: Run RideBooking program
         run: java -cp src RideBooking
+      - name: Run automated tests
+        run: |
+          javac src/RideBooking.java src/RideBookingTest.java
+          java -cp src RideBookingTest
