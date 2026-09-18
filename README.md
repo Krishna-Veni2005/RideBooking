@@ -18,3 +18,5 @@ Project is under development.
 ## Team Workflow
 
 Features are developed using branches and Pull Requests.
+
+Main branch update for rebase practice.
