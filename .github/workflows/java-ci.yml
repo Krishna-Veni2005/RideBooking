@@ -33,3 +33,18 @@ jobs:
         with:
           name: ridebooking-build
           path: src/*.class
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: ridebooking-build
+          path: deployed
+
+      - name: Verify deployment files
+        run: |
+          echo "Deploying RideBooking..."
+          ls -la deployed
