@@ -48,4 +48,5 @@ jobs:
       - name: Verify deployment files
         run: |
           echo "Deploying RideBooking..."
+          echo "Environment message: ${{ secrets.STAGING_MESSAGE }}"
           ls -la deployed
