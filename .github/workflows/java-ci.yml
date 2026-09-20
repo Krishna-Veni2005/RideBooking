@@ -50,3 +50,19 @@ jobs:
           echo "Deploying RideBooking..."
           echo "Environment message: ${{ secrets.STAGING_MESSAGE }}"
           ls -la deployed
+  production:
+    needs: deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v5
+        with:
+          name: ridebooking-build
+          path: production
+
+      - name: Deploy to production
+        run: |
+          echo "Deploying RideBooking to production..."
+          ls -la production
