@@ -28,3 +28,8 @@ jobs:
         run: |
           javac src/RideBooking.java src/RideBookingTest.java
           java -cp src RideBookingTest
+      - name: Upload compiled files
+        uses: actions/upload-artifact@v4
+        with:
+          name: ridebooking-build
+          path: src/*.class
